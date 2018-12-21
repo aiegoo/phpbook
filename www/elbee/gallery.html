@@ -1,0 +1,52 @@
+ <link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/colorbox.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+	 <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="./js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="./js/vendor/masonry.pkgd.min.js"></script>
+<script src="./js/vendor/jquery.colorbox-min.js"></script>
+<script src="js/webflow.js" type="text/javascript"></script>
+<script src="./js/main.js"></script>
+<header id="content" class="page-header" role="banner">
+   
+    <div class="inner clearfix" id="container">
+        <h1 class="site-logo"><a href="./"><img src="./img/logotop160x50.png" alt="Nothing but the best" height="50" width="160"></a></h1>
+        <form class="filter-form" id="gallery-filter">
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-all" value="all" checked>
+                <label for="filter-all">All</label>
+            </span>
+			<span class="form-item">
+                <input type="radio" name="filter" id="filter-darlings" value="darlings">
+                <label for="filter-architects">Darlings</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-people" value="people">
+                <label for="filter-people">Erectus</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-animals" value="animals">
+                <label for="filter-animals">Four leggs</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-nature" value="nature">
+                <label for="filter-nature">Fauna</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-plantes" value="plantes">
+                <label for="filter-plantes">Flora</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-architects" value="architects">
+                <label for="filter-architects">Architects</label>
+            </span>
+        </form>
+    </div>
+</header>
+
+<div class="page-main" role="main">
+    <ul class="gallery" id="gallery"></ul>
+    <button class="load-more" id="load-more">Load more</button>
+</div>
