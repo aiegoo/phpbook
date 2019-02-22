@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 [submodule "phpbook/board"]
 	path = phpbook/board
-=======
-[submodule "path_to_board"]
-	path = path_to_board
->>>>>>> 1f7dd043f9f2b1cc7f1991229d45cf89371ef00f
 	url = https://github.com/aiegoo/board.git
