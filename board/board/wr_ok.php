@@ -15,7 +15,7 @@ $sql .= " writer = '$writer', ";
 $sql .= " readnum = $readnum ";
 
 mysqli_query($conn, $sql);
-
+echo "hello";
 ?>
 
 <script>
