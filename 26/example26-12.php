@@ -1,6 +1,7 @@
 <?php // Example 26-12: logout.php
-  require_once 'header.php';
+  require_once '../robinsnest/header.php';
 
+  
   if (isset($_SESSION['user']))
   {
     destroySession();

@@ -3,6 +3,7 @@
   <head>
     <title>Events: click & dblclick</title>
     <script src='jquery-1.11.1.min.js'></script>
+    <script src='../20/OSC.js'></script>
   </head>
   <body>
     <h2>Click and double click the buttons</h2>
@@ -11,6 +12,10 @@
     <button class='myclass'>Button 3</button>
     <button class='myclass'>Button 4</button>
     <button class='myclass'>Button 5</button>
+    
+    <div class="col-2-of-2">
+      The time is: <span id="time">00:00:00</span><br>
+  </div>
     <script>
       $('.myclass')   .click( function() { $(this).slideUp() })
       $('.myclass').dblclick( function() { $(this).hide()    })
@@ -22,6 +27,20 @@
       // {
       //   $(this).slideUp()
       // }
+      setInterval("showtime(O('time'))", 1000)
+
+function showtime(object)
+{
+  var date = new Date()
+  object.innerHTML = date.toTimeString().substr(0,8)
+}
+
+/* OSC.js
+function O(i) { return typeof i == 'object' ? i : document.getElementById(i) }
+function S(i) { return O(i).style                                            }
+function C(i) { return document.getElementsByClassName(i)                    }
+
+*/
     </script>
   </body>
 </html>
